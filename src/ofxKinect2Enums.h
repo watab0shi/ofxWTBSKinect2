@@ -1,0 +1,43 @@
+#pragma once
+
+namespace ofxKinect2 
+{
+  enum Status
+  {
+    STATUS_OK,
+    STATUS_ERROR,
+    STATUS_NOT_IMPLEMENTED,
+    STATUS_NOT_SUPPORTED,
+    STATUS_NO_DEVICE,
+    STATUS_TIME_OUT,
+  };
+
+  enum SensorType
+  {
+    SENSOR_NONE,
+    SENSOR_COLOR,
+    SENSOR_IR,
+    SENSOR_LONG_EXPOSURE_IR,
+    SENSOR_DEPTH,
+    SENSOR_BODY_INDEX,
+    SENSOR_BODY,
+    SENSOR_AUDIO,
+  };
+
+  enum PixelFormat
+  {
+    PIXEL_FORMAT_NONE,
+    PIXEL_FORMAT_RGBA,
+    PIXEL_FORMAT_YUV,
+    PIXEL_FORMAT_BGRA,
+    PIXEL_FORMAT_BAYER,
+    PIXEL_FORMAT_YUY2
+  };
+
+  enum DeviceState
+  {
+    DEVICE_STATE_OK,
+    DEVICE_STATE_ERROR,
+    DEVICE_STATE_NOT_READY 
+  };
+}
